@@ -1,19 +1,30 @@
 <template>
-  <div id="app">
-  </div>
+<div>
+  <router-view></router-view>
+  <tabbar></tabbar>
+</div>
+
+
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import tabbar from '@/components/common/tabbar/tabbar.vue'
+
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    tabbar
+    
+    
   }
 }
 </script>
 
 <style>
+@import "assets/css/base.css";
+
 
 </style>
